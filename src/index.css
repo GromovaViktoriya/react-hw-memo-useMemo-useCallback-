@@ -1,4 +1,4 @@
-body{
+body {
     box-sizing: border-box;
     font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
     color: #2f2b43;
@@ -12,13 +12,13 @@ body{
     gap: 16px;
 }
 
-ul {
+.ul {
     display: grid;
     gap: 16px;
-    grid-template-columns: repeat(10,1fr);
+    grid-template-columns: repeat(10, 1fr);
 }
 
-li{
+.li {
     list-style: none;
     display: flex;
     align-items: center;
@@ -30,7 +30,7 @@ li{
     background: #d7c9ff;
 }
 
-button {
+.counterBtn {
     width: 100px;
     padding: 15px;
     border: none;
@@ -39,18 +39,18 @@ button {
     border-radius: 5px;
 }
 
-button:hover {
+.counterBtn:hover {
     background: #d7cafb;
 }
 
-h3{
+h3 {
     font-size: 36px;
     line-height: 1;
     margin: 0;
 
 }
 
-input{
+.input {
     height: 40px;
     width: 150px;
     padding: 10px;
@@ -60,7 +60,59 @@ input{
     cursor: pointer;
 }
 
-input:focus{
+.input:focus {
     outline: none;
     border: 3px solid #7861a1;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #cfcdcf;
+    cursor: pointer;
+}
+button:hover {
+    background: #a8a5a8;
+}
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px
+}
+
+.user-info{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.itemCart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px
+}
+.cartItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.taskList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btnWrapper{
+    display: flex;
+    gap: 5px
 }

@@ -6,9 +6,9 @@ export const ItemList = ({items, searchValue}) => {
     }, [items, searchValue])
 
     return (
-        <ul>
+        <ul className='ul'>
             {listArray.map(item => (
-                <li key={item.id}>{item.item}</li>
+                <li className='li' key={item.id}>{item.item}</li>
             ))}
         </ul>
     )
