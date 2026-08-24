@@ -1,0 +1,1 @@
+export const array = Array.from(Array(105), (_, index) => ({id: crypto.randomUUID(), item: `item ${index + 1}`}))
