@@ -4,6 +4,12 @@ import {ItemList} from "./components/ItemList.jsx";
 import {array} from "./constants/constants.js";
 import {useCallback, useState} from "react";
 
+
+import {UserProfile} from "./components/UserProfile/UserProfile.jsx";
+import {ItemCart} from "./components/ItemCart/ItemCart.jsx";
+import {TaskList} from "./components/TaskList/TaskList.jsx";
+
+
 function App() {
     const [searchValue, setSearchValue] = useState("");
     const [counter, setCounter] = useState(0);
@@ -23,6 +29,11 @@ function App() {
 
             <SearchInput value={searchValue} onChangeHandler={(value)=>onChangeHandler(value)} />
             <ItemList items={array} searchValue={searchValue} />
+
+            <p>Part 2</p>
+            <UserProfile/>
+            <ItemCart/>
+            <TaskList/>
         </div>
     )
 }
