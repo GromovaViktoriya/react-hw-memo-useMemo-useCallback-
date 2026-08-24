@@ -7,9 +7,11 @@ export const UserInfo = memo(({user}) => {
     return (
         <>
             <h3>Профиль пользователя</h3>
-            <p>{user.name}</p>
-            <p>{user.age}</p>
-            <p>Активен: {user.isActive? 'Да': 'Нет'}</p>
+            <div className="user-info">
+                <p>{user.name}</p>
+                <p>{user.age}</p>
+                <p>Активен: {user.isActive? 'Да': 'Нет'}</p>
+            </div>
         </>
     )
 })

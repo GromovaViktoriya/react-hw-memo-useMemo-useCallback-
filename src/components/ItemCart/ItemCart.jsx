@@ -26,7 +26,7 @@ export const ItemCart = () => {
     }
 
     return (
-        <div>
+        <div className="itemCart">
             <div>
                 <h3>Корзина товаров</h3>
                 {cart.map(item => {

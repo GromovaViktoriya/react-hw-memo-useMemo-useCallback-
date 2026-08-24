@@ -8,7 +8,7 @@ export const CartItem = memo(({item, plusOneHandler, deleteItemHandler}) => {
     // заново.
 
     return (
-        <div key={item.id} style={{display: 'flex', gap: '10px'}}>
+        <div key={item.id} style={{display: 'flex', gap: '10px'}} className="cartItem">
             <p>{item.title}</p>
             <p>{item.count}</p>
             <button onClick={() => plusOneHandler(item.id)}>+1</button>

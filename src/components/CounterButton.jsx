@@ -1,6 +1,6 @@
 export const CounterButton = ({onClickHandler}) => {
 
     return (
-        <button onClick={onClickHandler}>Counter</button>
+        <button className='counterBtn' onClick={onClickHandler}>Counter</button>
     )
 }

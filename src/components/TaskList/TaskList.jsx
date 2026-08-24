@@ -20,15 +20,17 @@ export const TaskList = () => {
     }
 
     return (
-        <div>
+        <div className="taskList">
             <h3>Список задач</h3>
             <ul>
                 {tasks.map((task) => {
                   return <TaskItem task={task} key={task.id}/>
                 })}
             </ul>
-            <button onClick={addRandomStringHandler}>Добавить задачу</button>
-            <button onClick={removeLastItemHandler}>Удалить последнюю задачу</button>
+            <div className="btnWrapper">
+                <button onClick={addRandomStringHandler}>Добавить задачу</button>
+                <button onClick={removeLastItemHandler}>Удалить последнюю задачу</button>
+            </div>
         </div>
     )
 }

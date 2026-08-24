@@ -30,7 +30,7 @@ function App() {
             <SearchInput value={searchValue} onChangeHandler={(value)=>onChangeHandler(value)} />
             <ItemList items={array} searchValue={searchValue} />
 
-            <p>Part 2</p>
+            <h3>Part 2</h3>
             <UserProfile/>
             <ItemCart/>
             <TaskList/>

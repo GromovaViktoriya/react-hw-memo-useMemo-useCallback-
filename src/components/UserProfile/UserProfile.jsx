@@ -18,7 +18,7 @@ export const UserProfile = () => {
     }
 
     return (
-        <div onClick={onClickHandler}>
+        <div onClick={onClickHandler} className="user-profile">
             <UserInfo user={user} />
             <button name={'Сменить имя'}>Сменить имя</button>
             <button name={'Увеличить возраст'}>Увеличить возраст</button>
